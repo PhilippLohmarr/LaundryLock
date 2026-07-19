@@ -1,0 +1,40 @@
+# XcodeGen-Projektdefinition — auf dem Mac: `brew install xcodegen && xcodegen generate`
+name: LaundryLock
+options:
+  bundleIdPrefix: com.philipplohmarr
+  deploymentTarget:
+    iOS: "26.0"
+  createIntermediateGroups: true
+
+targets:
+  LaundryLock:
+    type: application
+    platform: iOS
+    sources:
+      - LaundryLock
+    settings:
+      base:
+        SWIFT_VERSION: "6.0"
+        TARGETED_DEVICE_FAMILY: "1"            # iPhone only für den MVP
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        # TODO [WEITERBAUEN]: DEVELOPMENT_TEAM eintragen (Signing) bevor auf Gerät installiert wird.
+    info:
+      path: LaundryLock/Info.plist
+      properties:
+        UILaunchScreen: {}
+        NSCameraUsageDescription: >-
+          LaundryLock braucht die Kamera, um deine Waschmaschine zu registrieren und
+          den Alarm per Foto der Maschine zu beenden.
+        # AlarmKit-Berechtigung (iOS 26). Key-Name gegen finales SDK prüfen!
+        NSAlarmKitUsageDescription: >-
+          LaundryLock weckt dich mit einem prominenten Alarm, wenn dein Waschgang
+          fertig ist — auch bei Stummschaltung und Fokus.
+        UIBackgroundModes: []
+        # TODO [WEITERBAUEN]: Live Activities aktivieren, sobald das Widget-Target existiert:
+        # NSSupportsLiveActivities: true
+
+  # TODO [WEITERBAUEN]: Widget-/Live-Activity-Target ergänzen (siehe LaundryLockWidget/README.md):
+  # LaundryLockWidget:
+  #   type: app-extension
+  #   platform: iOS
+  #   sources: [LaundryLockWidget]

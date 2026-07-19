@@ -1,0 +1,20 @@
+# Xcode
+*.xcodeproj/
+!*.xcodeproj/project.pbxproj.keep
+xcuserdata/
+DerivedData/
+*.xcresult
+build/
+
+# SwiftPM
+.build/
+.swiftpm/
+
+# macOS
+.DS_Store
+
+# Secrets / lokale Konfiguration
+*.local.yml
+
+# Graphify: lokalen AST-Cache nicht versionieren (graph.json/html/report schon)
+graphify-out/cache/

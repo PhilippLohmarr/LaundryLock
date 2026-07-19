@@ -1,0 +1,162 @@
+{
+  ".claude/settings.json": {
+    "mtime": 1784488901.2264502,
+    "ast_hash": "8e354e95633a2e8f9b91523377f1968c",
+    "semantic_hash": ""
+  },
+  "LaundryLock/LaundryLockApp.swift": {
+    "mtime": 1784488750.7696354,
+    "ast_hash": "981491707f7a9b639b836fc009df5bb1",
+    "semantic_hash": ""
+  },
+  "LaundryLock/Models/CyclePreset.swift": {
+    "mtime": 1784488616.0576272,
+    "ast_hash": "d39aec756330ae23a475844caa858100",
+    "semantic_hash": ""
+  },
+  "LaundryLock/Models/LaundrySession.swift": {
+    "mtime": 1784488624.5896277,
+    "ast_hash": "24c85af22d921a73ee3c5b8ad156c51d",
+    "semantic_hash": ""
+  },
+  "LaundryLock/Models/WashingMachine.swift": {
+    "mtime": 1784488609.3976269,
+    "ast_hash": "a94de30e4b5d1d556aefcaa9a3c06c68",
+    "semantic_hash": ""
+  },
+  "LaundryLock/Services/AlarmService.swift": {
+    "mtime": 1784488686.4576316,
+    "ast_hash": "6001d9ce70e7326e3eff2ddf4a1c5f04",
+    "semantic_hash": ""
+  },
+  "LaundryLock/Services/CameraService.swift": {
+    "mtime": 1784488702.3256323,
+    "ast_hash": "6ec3fbd4cbb41c7fc03494779f796dd4",
+    "semantic_hash": ""
+  },
+  "LaundryLock/Services/PersistenceStore.swift": {
+    "mtime": 1784488715.1376333,
+    "ast_hash": "ad86a02e09bc6bbd0748a8637dad2605",
+    "semantic_hash": ""
+  },
+  "LaundryLock/Services/PhotoVerificationService.swift": {
+    "mtime": 1784488653.9296296,
+    "ast_hash": "96e7ca18bbf7110aac588d1d1666bdc1",
+    "semantic_hash": ""
+  },
+  "LaundryLock/ViewModels/AppModel.swift": {
+    "mtime": 1784488741.2816348,
+    "ast_hash": "7927d5f3437ce4b83b79d775f1fc56ff",
+    "semantic_hash": ""
+  },
+  "LaundryLock/Views/ActiveTimerView.swift": {
+    "mtime": 1784488796.6696382,
+    "ast_hash": "78e5b7e44b6f530df8d99a378e5edaf0",
+    "semantic_hash": ""
+  },
+  "LaundryLock/Views/AlarmVerificationView.swift": {
+    "mtime": 1784488821.7496395,
+    "ast_hash": "ee12dac62691d38f5f37e8b192ccddb9",
+    "semantic_hash": ""
+  },
+  "LaundryLock/Views/Components/CameraPreviewView.swift": {
+    "mtime": 1784488828.27364,
+    "ast_hash": "f5871270928e685cd1e6f063dd22eff8",
+    "semantic_hash": ""
+  },
+  "LaundryLock/Views/HistoryView.swift": {
+    "mtime": 1784488838.0136404,
+    "ast_hash": "251903947924fe16d82c0c7a9ebd5960",
+    "semantic_hash": ""
+  },
+  "LaundryLock/Views/HomeView.swift": {
+    "mtime": 1784488766.9856362,
+    "ast_hash": "a7b613c75176b94a9ba9a17e35ba86b3",
+    "semantic_hash": ""
+  },
+  "LaundryLock/Views/MachineSetupView.swift": {
+    "mtime": 1784488783.2616372,
+    "ast_hash": "198b8cbf37eaec39278d8ed93f567a83",
+    "semantic_hash": ""
+  },
+  "LaundryLock/Views/SettingsView.swift": {
+    "mtime": 1784488850.8976412,
+    "ast_hash": "1db98a68b42037b261821da17bb6f4c9",
+    "semantic_hash": ""
+  },
+  ".claude/CLAUDE.md": {
+    "mtime": 1784488901.225873,
+    "ast_hash": "9b31786b637be3c13978bec4c2330752",
+    "semantic_hash": ""
+  },
+  ".claude/skills/graphify/SKILL.md": {
+    "mtime": 1784488901.2255542,
+    "ast_hash": "f8d5ef667aae74129e01fcca97bbfddd",
+    "semantic_hash": ""
+  },
+  ".claude/skills/graphify/references/add-watch.md": {
+    "mtime": 1784488894.6016438,
+    "ast_hash": "d59d027fe449f06aa03905a01184e779",
+    "semantic_hash": ""
+  },
+  ".claude/skills/graphify/references/exports.md": {
+    "mtime": 1784488894.6016438,
+    "ast_hash": "9da2a2152e60a22f07f05fed5158f287",
+    "semantic_hash": ""
+  },
+  ".claude/skills/graphify/references/extraction-spec.md": {
+    "mtime": 1784488894.6016438,
+    "ast_hash": "42fef56a01698118f7fd722acdadea34",
+    "semantic_hash": ""
+  },
+  ".claude/skills/graphify/references/github-and-merge.md": {
+    "mtime": 1784488894.6016438,
+    "ast_hash": "cde13df085e4c492aeb7ba298a996d0d",
+    "semantic_hash": ""
+  },
+  ".claude/skills/graphify/references/hooks.md": {
+    "mtime": 1784488894.6016438,
+    "ast_hash": "3f545db6ce646650bb9de588f5512a27",
+    "semantic_hash": ""
+  },
+  ".claude/skills/graphify/references/query.md": {
+    "mtime": 1784488894.605644,
+    "ast_hash": "3c46f8ad006874260614ed8657d02307",
+    "semantic_hash": ""
+  },
+  ".claude/skills/graphify/references/transcribe.md": {
+    "mtime": 1784488894.605644,
+    "ast_hash": "67b6a5fa6c0974e18f60db9f8932fbd8",
+    "semantic_hash": ""
+  },
+  ".claude/skills/graphify/references/update.md": {
+    "mtime": 1784488894.605644,
+    "ast_hash": "c698309979460d0f02ba616417844399",
+    "semantic_hash": ""
+  },
+  "CLAUDE.md": {
+    "mtime": 1784488901.2260718,
+    "ast_hash": "82efb97a359f5c7290bf2513d14686be",
+    "semantic_hash": ""
+  },
+  "LaundryLockWidget/README.md": {
+    "mtime": 1784488860.821642,
+    "ast_hash": "0760cfac46ac689b14a0c9559d839db6",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1784488578.801625,
+    "ast_hash": "4102b21750ae9c89618d5bee754c538f",
+    "semantic_hash": ""
+  },
+  "docs/WEITERBAUEN.md": {
+    "mtime": 1784488886.7896435,
+    "ast_hash": "2d09ba93e28e34a6a5964e034b466775",
+    "semantic_hash": ""
+  },
+  "project.yml": {
+    "mtime": 1784488600.1096263,
+    "ast_hash": "ae5def0bd5311f00a2f438f4cb96bccc",
+    "semantic_hash": ""
+  }
+}
