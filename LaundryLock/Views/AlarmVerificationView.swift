@@ -38,17 +38,18 @@ struct AlarmVerificationView: View {
 
     // MARK: - Subviews
 
+    // Liquid Glass statt schwarzer Fläche über dem Kamerabild (Kit-Look) —
+    // Textfarben passen sich dem Material automatisch an.
     private var header: some View {
-        VStack(spacing: 8) {
+        VStack(spacing: Theme.spacingTight) {
             Text("🧺 Wäsche ist fertig!")
                 .font(.largeTitle.bold())
             Text("Geh zur Waschmaschine und fotografiere sie, um den Alarm zu stoppen.")
                 .font(.headline)
                 .multilineTextAlignment(.center)
         }
-        .foregroundStyle(.white)
         .padding()
-        .background(.black.opacity(0.55), in: RoundedRectangle(cornerRadius: 16))
+        .glassCard()
     }
 
     @ViewBuilder
@@ -67,13 +68,13 @@ struct AlarmVerificationView: View {
         }
     }
 
+    // Getöntes Glass (Systemfarbe als Tint) statt deckender Farbfläche.
     private func banner(_ text: String, color: Color) -> some View {
         Text(text)
             .font(.callout.weight(.semibold))
-            .foregroundStyle(.white)
             .padding()
             .frame(maxWidth: .infinity)
-            .background(color.opacity(0.85), in: RoundedRectangle(cornerRadius: 12))
+            .glassEffect(.regular.tint(color), in: .rect(cornerRadius: Theme.radiusControl))
     }
 
     private var captureButton: some View {
@@ -85,8 +86,7 @@ struct AlarmVerificationView: View {
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 8)
         }
-        .buttonStyle(.borderedProminent)
-        .tint(.indigo)
+        .buttonStyle(.glassProminent)
         .disabled(isVerifying || feedback == .success)
     }
 
@@ -95,7 +95,10 @@ struct AlarmVerificationView: View {
         VStack(spacing: 4) {
             Text("Notfall: 10 Sekunden gedrückt halten (\(model.emergencyOverridesPerMonth - model.emergencyOverridesUsedThisMonth) übrig diesen Monat)")
                 .font(.caption2)
-                .foregroundStyle(.white.opacity(0.7))
+                .foregroundStyle(.secondary)
+                .padding(.horizontal, Theme.spacingTight)
+                .padding(.vertical, 4)
+                .glassEffect() // kleine Glass-Kapsel statt halbtransparentem Text auf Kamerabild
             ProgressView(value: overrideProgress)
                 .tint(.red)
                 .opacity(overrideProgress > 0 ? 1 : 0)

@@ -29,7 +29,7 @@ struct ActiveTimerView: View {
                 } label: {
                     Text("Abbrechen").frame(maxWidth: .infinity)
                 }
-                .buttonStyle(.bordered)
+                .buttonStyle(.glass)
                 .padding(.horizontal)
 
                 // TODO [WEITERBAUEN]: "+5 min"-Button (einmaliger Snooze laut Konzept),
@@ -39,6 +39,7 @@ struct ActiveTimerView: View {
             Spacer()
         }
         .padding()
+        .background(Color(.systemGroupedBackground))
         .onReceive(ticker) { time in
             now = time
             model.markAlarming() // Zustandswechsel, sobald der Countdown abläuft
@@ -53,10 +54,10 @@ struct ActiveTimerView: View {
 
         return ZStack {
             Circle()
-                .stroke(.indigo.opacity(0.15), lineWidth: 14)
+                .stroke(Theme.accent.opacity(0.15), lineWidth: 14)
             Circle()
                 .trim(from: 0, to: progress)
-                .stroke(.indigo, style: StrokeStyle(lineWidth: 14, lineCap: .round))
+                .stroke(Theme.accent, style: StrokeStyle(lineWidth: 14, lineCap: .round))
                 .rotationEffect(.degrees(-90))
             Text(formatted(session.remaining))
                 .font(.system(size: 44, weight: .bold, design: .rounded))

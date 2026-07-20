@@ -50,7 +50,7 @@ struct MachineSetupView: View {
 
             CameraPreviewView(session: camera.session)
                 .aspectRatio(3 / 4, contentMode: .fit)
-                .clipShape(RoundedRectangle(cornerRadius: 16))
+                .clipShape(RoundedRectangle(cornerRadius: Theme.radiusCard))
             // TODO [WEITERBAUEN]: Overlay-Rahmen im Sucher ("Maschine hier platzieren"),
             // damit Referenz- und Alarm-Foto ähnlich gerahmt werden → bessere Match-Rate.
 
@@ -63,8 +63,7 @@ struct MachineSetupView: View {
                 Label("Referenzfoto aufnehmen", systemImage: "camera.fill")
                     .frame(maxWidth: .infinity)
             }
-            .buttonStyle(.borderedProminent)
-            .tint(.indigo)
+            .buttonStyle(.glassProminent)
             .disabled(!camera.isAuthorized)
         }
     }
@@ -76,14 +75,14 @@ struct MachineSetupView: View {
             Image(uiImage: photo)
                 .resizable()
                 .scaledToFit()
-                .clipShape(RoundedRectangle(cornerRadius: 16))
+                .clipShape(RoundedRectangle(cornerRadius: Theme.radiusCard))
 
             TextField("Name (z. B. „Keller“ oder „Bad“)", text: $machineName)
                 .textFieldStyle(.roundedBorder)
 
             HStack {
                 Button("Neu aufnehmen") { capturedPhoto = nil }
-                    .buttonStyle(.bordered)
+                    .buttonStyle(.glass)
                 Button("Speichern") {
                     do {
                         try model.registerMachine(name: machineName, referencePhoto: photo)
@@ -94,8 +93,7 @@ struct MachineSetupView: View {
                         // (zu dunkel? verwackelt?) statt erst beim Speichern zu scheitern.
                     }
                 }
-                .buttonStyle(.borderedProminent)
-                .tint(.indigo)
+                .buttonStyle(.glassProminent)
             }
         }
     }

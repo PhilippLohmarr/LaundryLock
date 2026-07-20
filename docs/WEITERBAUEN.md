@@ -34,6 +34,7 @@ grep -rn "TODO \[WEITERBAUEN\]" LaundryLock/ LaundryLockWidget/ project.yml
 | 12 | Erfolgs-Animation nach Match (Konfetti + Haptik) | `Views/AlarmVerificationView.swift` |
 | 13 | Blitz-Handling & Tap-to-Focus für dunkle Waschkeller | `Services/CameraService.swift`, `Components/CameraPreviewView.swift` |
 | 14 | Custom-Presets verwalten, zuletzt genutztes Preset priorisieren | `Models/CyclePreset.swift`, `Views/HomeView.swift` |
+| 14b | Design-Feinschliff nach iOS-27-UI-Kit: `glassEffect`/`.glassProminent`-API gegen finales SDK prüfen, AccentColor in Asset-Katalog, `ConcentricRectangle` für Radien | `DesignSystem/Theme.swift` |
 
 ## 🟢 P3 — Monetarisierung & Launch
 

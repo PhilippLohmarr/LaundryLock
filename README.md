@@ -63,6 +63,19 @@ grep -rn "TODO \[WEITERBAUEN\]" LaundryLock/
 
 Die priorisierte Gesamtliste steht in [`docs/WEITERBAUEN.md`](docs/WEITERBAUEN.md).
 
+## Design
+
+Das UI folgt **Apples offiziellem iOS 27 UI Kit** (Apple Design Resources / Sketch):
+native Systemkomponenten, Systemfarben, SF Pro + SF Rounded, SF Symbols, Materials
+und Liquid-Glass-Buttons (`.glass` / `.glassProminent`), große konzentrische Radien.
+Das Mapping Kit → SwiftUI ist zentral in
+[`LaundryLock/DesignSystem/Theme.swift`](LaundryLock/DesignSystem/Theme.swift)
+dokumentiert — dort auch die offenen Design-TODOs.
+
+Die Raster-Assets des Kits (Keyboards, Lock-Screen-Widgets …) sind System-UI und
+werden nicht ins Repo eingecheckt (Apple-Lizenz; in der App unnötig, da das System
+diese Oberflächen selbst rendert).
+
 ## Graphify (Knowledge Graph)
 
 Das Repo hat [Graphify](https://github.com/Graphify-Labs/graphify) installiert

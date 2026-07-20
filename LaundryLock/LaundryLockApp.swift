@@ -9,6 +9,7 @@ struct LaundryLockApp: App {
         WindowGroup {
             RootView()
                 .environment(model)
+                .tint(Theme.accent) // globaler Akzent aus dem iOS-27-UI-Kit-Theme
                 .onChange(of: scenePhase) { _, phase in
                     // Kommt der User zurück, während der Timer schon abgelaufen ist,
                     // direkt in den Alarm-Zustand wechseln → RootView zeigt den Foto-Flow.

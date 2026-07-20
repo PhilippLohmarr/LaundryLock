@@ -5,8 +5,8 @@
     "semantic_hash": ""
   },
   "LaundryLock/LaundryLockApp.swift": {
-    "mtime": 1784557768.59724,
-    "ast_hash": "069f319f6d996e8f19366f0f8e98b67b",
+    "mtime": 1784488750.7696354,
+    "ast_hash": "981491707f7a9b639b836fc009df5bb1",
     "semantic_hash": ""
   },
   "LaundryLock/Models/CyclePreset.swift": {
@@ -50,13 +50,13 @@
     "semantic_hash": ""
   },
   "LaundryLock/Views/ActiveTimerView.swift": {
-    "mtime": 1784557843.3372374,
-    "ast_hash": "90fd3010e780fdaa85ab9f84f30b3555",
+    "mtime": 1784488796.6696382,
+    "ast_hash": "78e5b7e44b6f530df8d99a378e5edaf0",
     "semantic_hash": ""
   },
   "LaundryLock/Views/AlarmVerificationView.swift": {
-    "mtime": 1784557869.4692364,
-    "ast_hash": "3bc48b582f43e0daacf29aa0f65f76ed",
+    "mtime": 1784488821.7496395,
+    "ast_hash": "ee12dac62691d38f5f37e8b192ccddb9",
     "semantic_hash": ""
   },
   "LaundryLock/Views/Components/CameraPreviewView.swift": {
@@ -65,18 +65,18 @@
     "semantic_hash": ""
   },
   "LaundryLock/Views/HistoryView.swift": {
-    "mtime": 1784557873.4252362,
-    "ast_hash": "21eec3ab9f34c92ef9d27d1a9012644a",
+    "mtime": 1784488838.0136404,
+    "ast_hash": "251903947924fe16d82c0c7a9ebd5960",
     "semantic_hash": ""
   },
   "LaundryLock/Views/HomeView.swift": {
-    "mtime": 1784557800.753239,
-    "ast_hash": "2daf9f079e987530082d3a34a0ae20a1",
+    "mtime": 1784488766.9856362,
+    "ast_hash": "a7b613c75176b94a9ba9a17e35ba86b3",
     "semantic_hash": ""
   },
   "LaundryLock/Views/MachineSetupView.swift": {
-    "mtime": 1784557822.757238,
-    "ast_hash": "d4ad36bfa5d0da47babe5ab964a81196",
+    "mtime": 1784488783.2616372,
+    "ast_hash": "198b8cbf37eaec39278d8ed93f567a83",
     "semantic_hash": ""
   },
   "LaundryLock/Views/SettingsView.swift": {
@@ -145,23 +145,18 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1784557885.9932356,
-    "ast_hash": "50503e3b8dd6ce06146b81dd8443a63d",
+    "mtime": 1784488578.801625,
+    "ast_hash": "4102b21750ae9c89618d5bee754c538f",
     "semantic_hash": ""
   },
   "docs/WEITERBAUEN.md": {
-    "mtime": 1784557891.6612356,
-    "ast_hash": "1a65989216ca457021cef7b289825288",
+    "mtime": 1784488886.7896435,
+    "ast_hash": "2d09ba93e28e34a6a5964e034b466775",
     "semantic_hash": ""
   },
   "project.yml": {
     "mtime": 1784488600.1096263,
     "ast_hash": "ae5def0bd5311f00a2f438f4cb96bccc",
-    "semantic_hash": ""
-  },
-  "LaundryLock/DesignSystem/Theme.swift": {
-    "mtime": 1784557743.2692409,
-    "ast_hash": "cbddc692967c6c36933c866adb390850",
     "semantic_hash": ""
   }
 }

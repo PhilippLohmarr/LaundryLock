@@ -53,7 +53,7 @@ struct HistoryView: View {
 
     private func color(for state: LaundrySession.State) -> Color {
         switch state {
-        case .running, .alarming: .indigo
+        case .running, .alarming: Theme.accent
         case .verified: .green
         case .overridden: .orange
         case .cancelled: .secondary

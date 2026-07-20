@@ -27,6 +27,7 @@ struct HomeView: View {
                 }
                 .padding()
             }
+            .background(Color(.systemGroupedBackground))
             .navigationTitle("LaundryLock")
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
@@ -42,14 +43,15 @@ struct HomeView: View {
 
     // MARK: - Subviews
 
+    // Card im Inset-Grouped-Look des Kits (Systemfarben, konzentrische Radien).
     private func machineHeader(_ machine: WashingMachine) -> some View {
-        HStack {
+        HStack(spacing: Theme.spacing) {
             if let photo = model.referencePhoto(for: machine) {
                 Image(uiImage: photo)
                     .resizable()
                     .scaledToFill()
                     .frame(width: 56, height: 56)
-                    .clipShape(RoundedRectangle(cornerRadius: 12))
+                    .clipShape(RoundedRectangle(cornerRadius: Theme.radiusControl))
             }
             VStack(alignment: .leading) {
                 Text(machine.name).font(.headline)
@@ -57,6 +59,8 @@ struct HomeView: View {
             }
             Spacer()
         }
+        .padding(Theme.spacing)
+        .background(Color(.secondarySystemGroupedBackground), in: RoundedRectangle(cornerRadius: Theme.radiusCard))
     }
 
     private func presetGrid(machine: WashingMachine) -> some View {
@@ -66,14 +70,15 @@ struct HomeView: View {
                     Task { await model.startLoad(machine: machine, preset: preset) }
                 } label: {
                     VStack {
-                        Text("\(preset.minutes)").font(.system(size: 34, weight: .bold, design: .rounded))
+                        // SF Rounded für Zahlen, wie Apples Timer/Clock-UI im Kit
+                        Text("\(preset.minutes)").font(.system(.largeTitle, design: .rounded, weight: .bold))
                         Text("Minuten").font(.caption)
                     }
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 20)
                 }
-                .buttonStyle(.borderedProminent)
-                .tint(.indigo)
+                // Liquid-Glass-Button (iOS 26+), erbt den globalen Akzent
+                .buttonStyle(.glassProminent)
             }
         }
         // TODO [WEITERBAUEN]: Eigene Dauer per Stepper/Wheel ("Custom") ergänzen.
@@ -83,7 +88,7 @@ struct HomeView: View {
         VStack(spacing: 16) {
             Image(systemName: "washer")
                 .font(.system(size: 64))
-                .foregroundStyle(.indigo)
+                .foregroundStyle(.tint)
             Text("Registriere zuerst deine Waschmaschine")
                 .font(.title3.weight(.semibold))
                 .multilineTextAlignment(.center)
@@ -92,8 +97,7 @@ struct HomeView: View {
                 .foregroundStyle(.secondary)
                 .multilineTextAlignment(.center)
             Button("Foto aufnehmen") { showMachineSetup = true }
-                .buttonStyle(.borderedProminent)
-                .tint(.indigo)
+                .buttonStyle(.glassProminent)
         }
         .padding(.top, 60)
     }
